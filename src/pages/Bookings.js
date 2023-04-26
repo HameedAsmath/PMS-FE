@@ -35,14 +35,14 @@ const Bookings = () => {
             title: "State",
             width: 50,
             dataIndex: "bookedParking",
-            render: (bookedParking) => <Typography.Text>{bookedParking.state}</Typography.Text>,
+            render: (bookedParking) => <Typography.Text>{bookedParking?.state}</Typography.Text>,
             key: "vehicle",
           },
           {
             title: "Area",
             width: 50,
             dataIndex: "bookedParking",
-            render: (bookedParking) => <Typography.Text>{bookedParking.area}</Typography.Text>,
+            render: (bookedParking) => <Typography.Text>{bookedParking?.area}</Typography.Text>,
             key: "hour",
           },
           {
