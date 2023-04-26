@@ -9,7 +9,7 @@ const Login = () => {
   const navigate = useNavigate()
   const onFinish = async(values) => {
     try {
-      const res = await axios.post("/login",values)
+      const res = await axios.post("https://pms-be.vercel.app/login",values)
       if(res.status===200){
         localStorage.setItem("token", res.data.token);
         localStorage.setItem("isLoggedin", true);
