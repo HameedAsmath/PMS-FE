@@ -19,7 +19,7 @@ function App() {
   const token = localStorage.getItem("token")
   useEffect(()=>{
     const getUserDetails = async()=>{
-      const res = await axios.post("/userdetails",{token})
+      const res = await axios.post("https://pms-be.vercel.app/userdetails",{token})
       setEmail(res?.data?.email)
       setFirstName(res?.data?.firstname)
       setIsAdmin(res?.data?.isAdmin)

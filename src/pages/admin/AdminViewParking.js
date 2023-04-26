@@ -17,7 +17,7 @@ const AdminViewParking = () => {
   const getAllParkings = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("/viewparking", { email });
+      const res = await axios.post("https://pms-be.vercel.app/viewparking", { email });
       if (res.status === 200) {
         setData(res?.data);
       }
